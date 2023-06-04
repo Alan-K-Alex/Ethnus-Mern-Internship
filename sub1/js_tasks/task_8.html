@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JS Task 8</title>
+
+<style>
+
+h1{
+
+    color:blue;
+}
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  
+  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+
+</head>
+<body>
+
+    <script>
+
+        function start()
+        {
+            console.log("start");
+            
+                    var e= document.getElementById("ele");
+                    e.style.animationPlayState = "running";
+
+        }
+
+
+        function stop()
+        {
+
+            console.log("stop");
+            var e = document.getElementById("ele");
+            e.style.animationPlayState = "paused";
+        }
+
+    </script>
+
+<h1>Click the following button to handle animations</h1>
+
+<button onclick="start()">Start</button>
+<button onclick="stop()">Stop</button>
+
+<div id="ele">
+
+</div>
+
+
+
+</body>
+</html>

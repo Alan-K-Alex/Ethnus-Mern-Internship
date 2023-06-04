@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JS task 2</title>
+
+<style>
+
+form{
+
+display: table;
+padding: 10px;
+border-spacing: 10px;
+
+
+}
+
+div{
+
+display: table-row;
+
+
+
+}
+
+textarea{
+
+display: table-cell;
+
+}
+
+input{
+
+    display: table-cell;
+   
+    
+}
+
+label{
+    display: table-cell;
+}
+p{
+    display: table-cell;
+}
+
+#m{
+    align-items: top;
+}
+
+#sub1{
+
+column-span: 6;
+
+}
+
+.war{
+
+    color: red;
+}
+
+#sub{
+
+text-align: center;
+align-content: center;
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+ <script src="./ex2.js"></script>   
+
+<form>    
+
+<div>
+
+ <label>Name :</label> <input type="text" id="nam"><p id="pnam" class="war"></p></br>
+
+</div>
+<div>
+<label>Email:</label> <input type="text" id="email"><p id="pemail" class="war"></p></br>
+</div>
+<div>
+<label>Website:</label> <input type="text" id="web"><p id="pweb" class="war"></p></br>
+</div>
+<div>
+<label id="m">Message:</label> <textarea id="msg" rows="8" cols="25" ></textarea><p id="pmsg" class="war"></p></br>
+</div>
+<div id="sub1">
+<input id="sub" type="button" value="Submit" onclick="validate()">
+</div>
+</form>
+
+
+</body>
+</html>

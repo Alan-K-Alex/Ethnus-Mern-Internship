@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Task 11</title>
+<style>
+
+body{
+
+    background-color: palevioletred;
+}
+
+h1{
+
+    text-align: center;
+    color: blue;
+}
+table{
+
+    margin: 2% 20%;
+    width:60%;
+    height: 80%;
+    
+}
+td{
+  
+    
+    padding: 3px;
+   
+ 
+    
+}
+
+
+#txt2{
+
+
+    text-align: left;
+}
+
+#txt3{
+
+    text-align: right;
+}
+
+
+.txt{
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+input[type=button]{
+
+
+    background-color: red;
+    color: white;
+
+    border-radius: 45%;
+    margin: 1% 43%;
+
+width:12%;
+height: 80%;
+
+cursor: pointer;
+}
+
+.alrt{
+
+    color: red;
+}
+
+
+</style>
+</head>
+<body>
+
+<script>
+
+function validate()
+{
+    let fn = document.getElementById("fnm").value;
+    let ln = document.getElementById("lnm").value;
+    let em = document.getElementById("eml").value;
+    let pd = document.getElementById("pswd").value;
+    let rpd = document.getElementById("re_pswd").value;
+    let ag = document.getElementById("_age").value;
+    let ph = document.getElementById("_phno").value;
+    let adr = document.getElementById("_add").value;
+    let st = document.getElementById("_state").value;
+   
+
+    if(fn=="")
+    {
+      document.getElementById("fnam").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("fnam").innerHTML="";
+      
+
+    }
+
+    if(ln=="")
+    {
+      document.getElementById("lnam").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("lnam").innerHTML="";
+      
+
+    }
+
+    if(em=="")
+    {
+      document.getElementById("mail").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("mail").innerHTML="";
+      
+
+    }
+
+    if(pd=="")
+    {
+      document.getElementById("pwd").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("pwd").innerHTML="";
+      
+
+    }
+
+    if(rpd=="")
+    {
+      document.getElementById("re_pwd").innerHTML="POOR";
+    
+
+    }
+    else if(rpd!==pd)
+    {
+       document.getElementById("re_pwd").innerHTML="MISMATCH";
+       
+
+    }
+    else{
+
+        document.getElementById("re_pwd").innerHTML="";
+      
+
+    }
+
+    if(ag=="")
+    {
+      document.getElementById("age").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("age").innerHTML="";
+      
+
+    }
+
+    if(ph=="")
+    {
+      document.getElementById("phno").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("phno").innerHTML="";
+      
+
+    }
+
+    if(adr=="")
+    {
+      document.getElementById("addr").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("addr").innerHTML="";
+      
+
+    }
+    if(st=="")
+    {
+      document.getElementById("state").innerHTML="POOR";
+      
+
+    }
+    else{
+
+        document.getElementById("state").innerHTML="";
+      
+
+    }
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+<form>
+<div class="cent">
+
+<h1>Registeration Form</h1>
+
+
+<table>
+<tr>
+<td class="txt">First Name</td>
+<td class="inp"><input id="fnm" type="text" style="width:95%;"></td>   
+<td><p class="alrt" id="fnam"></p></td>
+</tr>
+<tr>
+<td class="txt">Last Name</td>
+<td class="inp"><input id="lnm" type="text" style="width:95%;"></td>   
+<td><p class="alrt" id="lnam"></p></td>
+</tr>
+
+<tr>
+<td class="txt">Email</td>
+<td class="inp"><input id="eml" type="email" style="width:95%;"></td>   
+<td><p class="alrt" id="mail"></p></td>
+</tr>
+
+<tr>
+    <td class="txt">Password</td>
+    <td class="inp"><input id="pswd" type="password" style="width:95%;"></td>   
+    <td><p class="alrt" id="pwd"></p></td>    
+</tr>
+
+    <tr>
+        <td class="txt">Re-enter password</td>
+        <td class="inp"><input id="re_pswd" type="password" style="width:95%;"></td>   
+        <td><p class="alrt" id="re_pwd"></p></td>    
+    </tr>
+        <tr>
+            <td class="txt" rowspan="2">Gender:</td>
+            <td class="inp"><input type="radio" name="gen" style="width:95%;"/><label for="gen">Male</label></td>   
+            
+        </tr>
+            <tr>
+               
+                <td class="inp"><input type="radio" name="gen" style="width:95%;"/>Female</td>   
+                  
+            </tr>
+                <tr>
+                    <td class="txt">Age</td>
+                    <td class="inp"><input id="_age" type="number" style="width:95%;"></td>   
+                    <td><p class="alrt" id="age"></p></td>    
+                
+                </tr>
+
+                    <tr>
+                        <td class="txt">Phone Number</td>
+                        <td class="inp"><input id="_phno" type="tel" style="width:95%;"></td>   
+                        <td><p class="alrt" id="phno"></p></td>    
+                    </tr>
+
+                        <tr>
+                            <td class="txt">Address</td>
+                            <td class="inp"><textarea id="_add" style="width:95%;"></textarea></td>   
+                            <td><p class="alrt" id="addr"></p></td>    
+                        </tr>
+
+                            <tr>
+                                <td class="txt">State</td>
+                                <td class="inp"><input id="_state" type="text" style="width:95%;"></td>   
+                                <td><p class="alrt" id="state"></p></td>    
+                            </tr>
+
+                                <tr>
+                                    <td class="txt">Country</td>
+                                    <td class="inp">
+                                    
+                                        <select name="cnt" id="cnt">
+                                            <option value="none" selected disabled hidden>Choose a country</option>    
+                                            <option value="India">India</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Israel">Israel</option>
+                                            </select>
+
+
+
+                                    </td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td class="txt">Languages known</td>
+                                        <td class="inp">
+                                            <label>
+                                                <input type="checkbox" value="eng"/>English
+                                                </label> 
+                                                <label>
+                                                <input type="checkbox" value="kann"/>Kannada    
+                                                </label>
+                                                <label>
+                                                 <input type="checkbox" value="hindi"/>Hindi   
+                                                </label>
+                                                <label>
+                                                 <input type="checkbox" value="telugu"/>Telugu   
+                                                </label>
+
+                                        </td>   
+                                        </tr>
+                                        <tr>
+                                            <td id="txt2" colspan="2">
+
+                                                <label for="cond" >
+                                                    <input type="checkbox" unam="cond"/> Hereby I declare all the given details are true
+                                                    </label>
+
+                                            </td>
+                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td id="txt3" colspan="2">
+    
+                                                  Log in to <a href="https://ethnus.com/">Ethnus </a>website
+    
+                                                </td>
+                                                
+                                                </tr>
+    
+
+
+                            
+</table>
+
+<input type="button" onclick="validate()"  value="Register">
+
+</div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Layout Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+
+        ul li a{
+
+            color: white;
+
+        }
+
+        ul li #first{
+
+            color: yellow;
+        }
+
+        .yellow-div {
+            background-color: yellow;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .company-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .contact-info span {
+            margin-left: 10px;
+            padding: 1%;
+        }
+        .dark-blue-div {
+            background-color: #004a7c;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin-right: 10px;
+            padding: 1%;
+        }
+     
+        .image-background {
+            background-image: url('https://picsum.photos/200/300');
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+        .image-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .three-parts-div {
+            display: flex;
+        }
+        .dark-blue {
+            background-color: #004a7c;
+            flex: 1;
+            padding: 20px;
+            color: white;
+        }
+        .yellow {
+            background-color: yellow;
+            flex: 1;
+            padding: 20px;
+        }
+        .dark-blue2 {
+            background-color: #004a7c;
+            flex: 1;
+            padding: 20px;
+            color: white;
+        }
+        .card{
+            flex: 1;
+            padding: 20px;
+            display: flex; 
+            flex-direction:row;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="yellow-div">
+            <div class="company-name" style="font-weight: 1000;font-size: 40px;">Builderz</div>
+            <div class="contact-info">
+                <span><i class="fa-light fa-calendar-clock"></i> Opening Hours</span>
+                <span><i class="fa-regular fa-phone-volume"></i> Call Line Number</span>
+                <span><i class="fa-regular fa-envelopes"></i>Email</span>
+            </div>
+        </div>
+        <div class="dark-blue-div">
+            <nav class="navbar ">
+                <ul>
+                    <li><a id="first" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-light">Get a Quote</button>
+            </nav>
+        </div>
+        <div class="image-background">
+            <h3 class="image-text" style="font-weight: 200;">We are Professionals</h3>
+            <h1 class="image-text" style="font-weight: bold;">For Your Dream Project</h1>
+            <button class="btn btn-outline-light">Click Here</button>
+        </div>
+        <div class="three-parts-div">
+            <div class="card" style="background-color: #004a7c; color: white;">
+                <img src="https://picsum.photos/100" alt="img"/>
+                <div style="padding: 10px;">
+                    <h3>Dark Blue</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+                </div>
+            </div>
+            <div class="card" style="color: #004a7c; background-color: yellow;">
+                <img src="https://picsum.photos/100" alt="img"/>
+                <div style="padding: 10px;">
+                    <h3>Dark Blue</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+                </div>
+            </div>
+            <div class="card" style="background-color: #004a7c; color: white;">
+                <img src="https://picsum.photos/100" alt="img"/>
+                <div style="padding: 10px;">
+                    <h3>Dark Blue</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

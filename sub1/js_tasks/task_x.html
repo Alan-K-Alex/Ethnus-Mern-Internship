@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const arr1=[10,20,30];
+const arr2 = [40,55,60];
+const arr3 = arr1.concat(arr2);
+
+console.log("concat: ",arr3);
+
+console.log(arr3.every((val)=>val>30));
+console.log(arr3.some((val)=>val>30));
+
+
+let arr = ["Apple","Banana","Orange"];
+
+console.log("ForEach Method")
+arr.forEach(function(val,ind){ console.log(ind,"-",val)})
+
+console.log("Map method")
+
+arr.map(function(val,ind){ console.log(ind," - ",val)})
+
+console.log("map :"+arr.length+" "+arr)
+num=[10,20,30,40,50]
+
+console.log("Array = "+num);
+
+console.log("Every val>30:"+num.every(function(val){return val>30;}));
+
+
+console.log("Some val>30 :"+num.some((val)=>val>30));
+
+console.log("Filter val>30:"+num.filter((val)=>val>30));
+
+console.log("Find val==100:"+num.find((val)=>val==100));
+
+console.log("findIndex val==10:"+num.findIndex((val)=>val==10));
+
+var arr5 = ['C','C++','python','C++'];
+
+console.log("For Each ");
+arr5.forEach(function(fetch){
+
+    console.log(fetch);
+
+});
+
+console.log("Array = "+arr5);
+console.log("Reverse = "+arr5.reverse());
+
+
+var op1=arr5.indexOf("C++");
+var op2 = arr5.lastIndexOf("C++");
+
+
+console.log("indexOf : "+op1);
+console.log("lastIndexOf :"+op2);
+
+var arr6 = [2.1,3.5,4.7];
+
+console.log('Round function')
+
+console.log('Old '+arr6);
+
+
+var res3= arr6.map((val)=>Math.round(val));
+
+console.log('New :'+res3);
+
+
+console.log('Sort');
+
+console.log('sorted = '+arr6.sort());
+
+var arr4 = ["A","N","J"];
+
+console.log('Array = '+arr4)
+
+console.log('Extracted element (applying pop) : '+arr4.pop());
+
+console.log("Remaining elements: "+arr4);
+
+console.log('apply push')
+arr4.push("React");
+
+
+console.log("After insertion : "+arr4);
+arr4.shift();// remove first element 
+
+console.log("After shift opr : "+arr4);
+
+const obj = {0:1,1:2,2:3}
+
+for(let ele in obj)
+{
+
+console.log("keys : "+ele);
+
+}
+
+const arr7=["Hello World","Python",'Red'," Tenet "];
+
+console.log("Uppercase");
+
+for(let ele in arr7)
+{
+    console.log(arr7[ele].toUpperCase());
+}
+
+console.log('Lowercase');
+
+for(let ele in arr7)
+{
+    console.log(arr7[ele].toLowerCase());
+}
+
+console.log("Trim");
+
+const arr8=arr7.map((val)=>val.trim());
+
+for(let ele in arr8)
+{
+    console.log(arr8[ele]);
+}
+
+console.log("Split");
+const arr9=arr7.map((val)=>val.split(" "));
+
+for(let ele in arr9)
+{
+    console.log(arr9[ele]);
+}
+
+
+
+</script>
+</body>
+</html>

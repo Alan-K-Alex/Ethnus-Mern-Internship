@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Task 9</title>
+<style>
+
+table{
+
+    position:absolute;
+    background-color: rgb(159, 9, 72);
+    top:10%;
+    left:30%;
+    border: 5px solid rgb(153, 54, 87);
+    border-width:10px 50px ;
+    color: white;
+    
+    padding:5%;
+}
+
+td{
+    padding: 3%;
+}
+
+input[type=submit]{
+
+    width:90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+    <form>
+<table>
+    <tr>
+<td>Name: </td>
+<td><input type="text" placeholder="your name" required></td>
+    </tr>
+
+    <tr>
+        <td>Email: </td>
+        <td><input type="email" placeholder="your email" required></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="tel" placeholder="" pattern="[1-9][0-9]{9}" required></td>
+                            </tr>
+
+<tr>
+<td>Gender: </td>
+<td>
+<input type="radio" value="male" name="gender" id="male">
+<label for="male">Male</label>
+<input type="radio" value="female" name="gender" id="female">
+<label for="female">Female</label>
+</td>
+</tr>
+
+<tr>
+<td>language</td>
+<td><select name="lang" id="lang" required>
+    <option value="none" selected hidden>select a language</option>
+    <option value="eng">English</option>
+    <option value="heb">Hebrew</option>
+    <option value="hindi">Hindi</option>
+</select> </td>
+
+</tr>
+
+
+                            <tr>
+                                <td>Zip Code: </td>
+                                <td><input type="text" pattern="[1-9][0-9]{5}" placeholder="" required></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>About: </td>
+                                        <td><textarea rows="4" cols="25" placeholder="Write about yourself..."></textarea></td>
+                                            </tr>
+
+
+                            <tr >
+                                <td colspan="2"><input type="submit" value="Register"></td>
+
+                            </tr>
+
+</table>
+</form>
+</body>
+</html>

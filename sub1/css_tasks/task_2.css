@@ -1,0 +1,19 @@
+ul{
+
+
+    
+    list-style-image: none;
+    padding:0;
+    
+}
+ li::before{
+
+content: #973597;;
+
+color: red;
+font-weight: bold;
+display: inline-block; 
+width: 1em;
+margin-left: -1em;
+
+}
